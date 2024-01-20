@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digits n Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Add this to your existing styles */
+        #challenge,
+#tables,
+#sql-schema,
+#questions {
+    background-color:rgb(243, 229, 80); /* Light blue background color */
+    padding: 20px; /* Add padding for better visual appeal */ /* Change this color code to your desired background color */
+}
+
+h2, h1 {
+    background-color: white; /* Change this to the desired background color */
+    padding: 12px; /* Add padding for better visual appearance */
+    border-radius: 5px; /* Add rounded corners for better visual appearance */
+}
+
+#sql-schema li {
+    font-size: 12px; /* Adjust the font size to your preference */
+}
+
+#questions li {
+    font-size: 20px;
+}
+
+        header {
+            
+        }
+
+        nav {
+            background: url('path/to/your/nav-background-image.jpg') center/cover no-repeat, #343a40; /* Add your image path */
+            padding: 5px 7%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            max-width: 400px; /* Adjust the max-width according to your logo size */
+            height: auto;
+            margin-right: 10px;
+
+        }
+
+        main img {
+            max-width: 1000px; /* Adjust the max-width according to your logo size */
+            height: auto;
+            display: block; /* Center the image horizontally */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 50px;
+           
+        }
+
+        section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #f98e0b;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+
+        p {
+            color: #292b2c;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        p2 {
+            color:black;
+            margin-bottom: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color:black;
+            margin-bottom: 20px;
+            font-size: 50px;
+            text-align: left;
+        }
+        p3 {
+            color:black;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sql-schema-container {
+            float: left; /* Align to the left */
+            width: 30%; /* Adjust the width as needed */
+            margin-right: 20px; /* Add some margin for spacing */
+        }
+
+        #sql-schema h2 {
+            background-color: white; /* Change this to the desired background color */
+            padding: 12px; /* Add padding for better visual appearance */
+            border-radius: 5px; /* Add rounded corners for better visual appearance */
+        }
+
+        #sql-schema ol {
+            list-style: none; /* Remove default list styles */
+            padding: 0;
+        }
+
+        #sql-schema li {
+            font-size: 14px; /* Adjust the font size to your preference */
+        }
+
+
+       
+        footer {
+    background:whitesmoke;
+    color:#292b2c;
+    text-align: center;
+    padding: 20px 4%;
+    position: relative; /* Add this to create a stacking context */
+    z-index: 1; /* Add this to make sure the text is on top of the background */
+}
+header {
+    text-align: center;
+    background: url('images/Screenshot\ \(404\).png') center/cover no-repeat, #343a40;
+    padding: 1px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+}
+h4 {
+    font-family: 'Playfair Display', serif; /* Use Montserrat font */
+            font-weight: 700; /* Bold */
+            color: #333; /* Black color for a professional look */
+            font-size: 6em; /* Slightly reduce font size for better balance */
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo.png" alt="Logo">
+        <!-- You can add any header content here, such as a page title, slogan, etc. -->
+        <h4>Digits n Data</h4>
+    </header>
+    
+    <nav>
+        <a href="#challenge">Challenge</a>
+        <a href="#tables">Tables</a>
+        <a href="#sql-schema">SQL Schema</a>
+        <a href="#questions">Questions</a>
+    </nav>
+
+
+    <main>
+        <section id="challenge">
+            <h2>Challenge</h2>
+            <p>Your challenge is to craft SQL queries to extract insights from the Ayodhya Ram Temple database.</p>
+            <h1>Ayodhya Ram Temple SQL Analysis</h1>
+            <img src="images/Screenshot (707).png" alt="Logo">
+            
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <p>Deity</p>
+            
+            <p>Temple</p>
+            
+            <p>ConstructionPhase</p>
+            
+            <p>Architecture</p>
+            
+            <p>Donations</p>
+
+            <p>Events</p>
+
+            <p>TempleEvents</p>
+            
+        </section>
+
+        <section id="sql-schema">
+            <h2>SQL Schema</h2>
+            <ol>
+                <li>
+                    
+                    <pre>
+                        <code>  
+                            -- Table for Deity
+                            CREATE TABLE Deity (
+                                DeityID INT PRIMARY KEY,
+                                Name VARCHAR(255) NOT NULL,
+                                Description TEXT
+                            );
+                            
+                            -- Table for Temple
+                            CREATE TABLE Temple (
+                                TempleID INT PRIMARY KEY,
+                                Name VARCHAR(255) NOT NULL,
+                                Location VARCHAR(255),
+                                ConstructionStartDate DATE,
+                                ExpectedCompletionDate DATE
+                            );
+                            
+                            -- Table for ConstructionPhase
+                            CREATE TABLE ConstructionPhase (
+                                PhaseID INT PRIMARY KEY,
+                                TempleID INT,
+                                PhaseName VARCHAR(255) NOT NULL,
+                                StartDate DATE,
+                                CompletionDate DATE,
+                                CONSTRAINT fk_temple FOREIGN KEY (TempleID) REFERENCES Temple(TempleID)
+                            );
+                            
+                            -- Table for Architecture
+                            CREATE TABLE Architecture (
+                                ArchitectureID INT PRIMARY KEY,
+                                TempleID INT,
+                                ArchitectName VARCHAR(255) NOT NULL,
+                                Description TEXT,
+                                CONSTRAINT fk_temple_architecture FOREIGN KEY (TempleID) REFERENCES Temple(TempleID)
+                            );
+                            
+                            -- Table for Donations
+                            CREATE TABLE Donations (
+                                DonationID INT PRIMARY KEY,
+                                DonorName VARCHAR(255) NOT NULL,
+                                Amount DECIMAL(10, 2) NOT NULL,
+                                DonationDate DATE,
+                                TempleID INT,
+                                CONSTRAINT fk_temple_donations FOREIGN KEY (TempleID) REFERENCES Temple(TempleID)
+                            );
+                            
+                            -- Table for Events
+                            CREATE TABLE Events (
+                                EventID INT PRIMARY KEY,
+                                EventName VARCHAR(255) NOT NULL,
+                                EventDate DATE,
+                                Description TEXT
+                            );
+                            
+                            -- Table for TempleEvents
+                            CREATE TABLE TempleEvents (
+                                TempleID INT,
+                                EventID INT,
+                                CONSTRAINT fk_temple_events_temple FOREIGN KEY (TempleID) REFERENCES Temple(TempleID),
+                                CONSTRAINT fk_temple_events_event FOREIGN KEY (EventID) REFERENCES Events(EventID),
+                                PRIMARY KEY (TempleID, EventID)
+                            );
+                            
+                            
+                            -- Inserting values into Deity table
+                            INSERT INTO Deity (DeityID, Name, Description)
+                            VALUES
+                                (1, 'Rama', 'An incarnation of Vishnu, a principal deity of Hinduism born in Ayodhya.'),
+                                (2, 'Ram Lalla Virajman', 'The infant form of Rama, the presiding deity of the Ram Mandir temple.');
+                            
+                            -- Inserting sample data into the Temple table
+                            INSERT INTO Temple (TempleID, Name, Location, ConstructionStartDate, ExpectedCompletionDate)
+                            VALUES
+                                (1, 'Ram Mandir', 'Ayodhya, Uttar Pradesh, India', '2020-03-01', '2024-01-22');
+                            
+                            -- Example values for ConstructionPhase table
+                            INSERT INTO ConstructionPhase (PhaseID, TempleID, PhaseName, StartDate, CompletionDate)
+                            VALUES
+                                (1, 1, 'Phase 1', '2020-03-01', '2020-05-15'),
+                                (2, 1, 'Phase 2', '2020-06-01', '2020-08-30'),
+                                (3, 1, 'Phase 3', '2021-01-10', '2021-03-25'),
+                                (4, 1, 'Phase 4', '2021-06-15', '2022-02-28');
+                            
+                            -- Inserting values into the Architecture table
+                            INSERT INTO Architecture (ArchitectureID, TempleID, ArchitectName, Description)
+                            VALUES
+                                (1, 1, 'Chandrakant Sompura', 'Chief architect of the temple'),
+                                (2, 1, 'Nikhil Sompura', 'Assistant architect'),
+                                (3, 1, 'Ashish Sompura', 'Assistant architect');
+                            
+                            -- Inserting sample data for Donations
+                            INSERT INTO Donations (DonationID, DonorName, Amount, DonationDate, TempleID)
+                            VALUES
+                            (1, 'Ram Nath Kovind', 501000.00, '2021-01-15', 1), -- Assuming TempleID 1 corresponds to the Ram Mandir
+                            
+                            (2, 'Anonymous Donor', 100.00, '2021-02-01', 1),
+                            (3, 'Leadership Council', 1000000.00, '2021-03-10', 1),
+                            
+                            (4, 'H.D. Kumaraswamy', 5000.00, '2021-05-01', 1),
+                            (5, 'Siddaramaiah', 20000.00, '2021-05-15', 1),
+                            
+                            (6, 'VHP Activist 1', 50.00, '2021-06-01', 1),
+                            (7, 'VHP Activist 2', 75.00, '2021-06-15', 1),
+                           
+                            (8, 'Muslim Community Member', 1000.00, '2021-07-01', 1),
+                            (9, 'Christian Community Member', 500.00, '2021-07-15', 1),
+                            
+                            (10, 'Anonymous Supporter', 200.00, '2021-08-01', 1);
+                            
+                            
+                            -- Inserting sample values into Events table
+                            INSERT INTO Events (EventID, EventName, EventDate, Description)
+                            VALUES
+                                (1, 'Commencement Ceremony', '2020-08-05', 'Ceremony celebrating the commencement of Ram Mandir construction by PM Narendra Modi'),
+                                (2, 'Bhoomi Pujan Ceremony', '2020-08-05', 'Ground-breaking ceremony with Vedic rituals and foundation stone laying by PM Narendra Modi'),
+                                (3, 'Vijay Mahamantra Jaap Anushthan', '2020-04-06', 'Chanting of Vijay Mahamantra for victory over hurdles in temple construction'),
+                                (4, 'Pran Pratishtha Ceremony', '2024-01-22', 'Consecration ceremony scheduled for the installation of Lord Ram idol in the garbhagriha');
+                            
+                            
+                            -- Insert values into TempleEvents table
+                            
+                            INSERT INTO TempleEvents (TempleID, EventID) VALUES
+                                (1, 1), -- Assuming TempleID 1 and EventID 1 are associated
+                                (1, 2), -- Assuming TempleID 1 and EventID 2 are associated
+                                (1, 3), -- Assuming TempleID 1 and EventID 3 are associated
+                                (1, 4); -- Assuming TempleID 1 and EventID 4 are associated
+                            
+
+</code>
+</pre>
+</li>
+
+            </ol>
+        </section>
+        
+
+        <section id="questions">
+            <h2>Questions</h2>
+            <ul>
+                <li>1)Retrieve information about the Ram Mandir?</li>
+                <li>2)List all construction phases for the Ram Mandir?</li>
+                <li>3)Find the total amount of donations received for the Ram Mandir?</li>
+                <li>4)Get details about the architecture of the Ram Mandir?</li>
+                <li>5)Retrieve events associated with the Ram Mandir?</li>
+                <li>6)Find donors who contributed more than 50000 towards the Ram Mandir?</li>
+                <li>7)Retrieve details about a specific deity (e.g., Rama) ?</li>
+                <li>8)Find the start and end dates of the construction phases for the Ram Mandir?</li>
+                <li>9)Count the number of events associated with each temple?</li>
+                <li>10)Find the donors who made contributions on or after 2021-06-01'?</li>
+            </ul>
+        </section>
+    
+    <p3> Create a LinkedIn post. Ensure that you tag @Digits n Data and  @Nitish Kumar to let me know how you get on!</p3>
+             
+    </main>
+
+    <footer>
+        <p>&copy; Copyright, 2024 All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Hello! Thanks for clicking!");
+        }
+    </script>
+</body>
+
+</html>
